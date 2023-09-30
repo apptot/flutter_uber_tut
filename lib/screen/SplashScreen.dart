@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterubertut/extensions/Styles.dart';
 import 'package:flutterubertut/extensions/Widget.dart';
 import 'package:flutterubertut/screen/WalkthroughScreen.dart';
-import 'package:flutterubertut/utils/Colors.dart';
+import 'package:flutterubertut/extensions/Colors.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:styled_widget/styled_widget.dart';
 
@@ -54,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   width: context.width(),
                   fit: BoxFit.cover),
             ),
-            Center(child: Loading()),
+            Loading(),
           ],
         ),
       ),
