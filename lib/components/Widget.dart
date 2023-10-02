@@ -8,7 +8,7 @@ Widget Vertical_small = 16.height;
 
 Widget Loading(){
   return  Center(
-    child: Image.asset('images/juberCarBooking/jcbGifs/jcb_loader.gif',
+    child: Image.asset('',
         color: jcbDarkColor, width: 50, height: 50),
   );
 }

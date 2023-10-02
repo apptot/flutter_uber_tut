@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterubertut/extensions/Styles.dart';
-import 'package:flutterubertut/extensions/Widget.dart';
+import 'package:flutterubertut/components/Widget.dart';
 import 'package:flutterubertut/extensions/Colors.dart';
+import 'package:flutterubertut/utils/Constants.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:styled_widget/styled_widget.dart';
 
@@ -28,25 +29,25 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
     walkThroughList.add(WalkThroughModelClass(
       title: 'Request a Ride',
       subTitle: 'Request a ride get picked up by a \nnearby community driver',
-      image: 'images/juberCarBooking/jcb_walkthrough1.png',
+      image: img_walkthrough1,
     ));
     walkThroughList.add(WalkThroughModelClass(
       title: 'Vehicle Selection',
       subTitle:
           'Users have the liberty to choose the \ntype of vehicles as per their need.',
-      image: 'images/juberCarBooking/jcb_walkthrough2.png',
+      image: img_walkthrough2,
     ));
     walkThroughList.add(WalkThroughModelClass(
       title: 'Live Ride Tracking',
       subTitle:
           'Know your driver in advance and be \nable to view current location in real \ntime on the map',
-      image: 'images/juberCarBooking/jcb_walkthrough3.png',
+      image: img_walkthrough3,
     ));
     walkThroughList.add(WalkThroughModelClass(
       title: 'Trip Sharing',
       subTitle:
           'Passengers can share their ride details with family and friends for safety reasons.',
-      image: 'images/juberCarBooking/jcb_walkthrough4.png',
+      image: img_walkthrough4,
     ));
   }
 

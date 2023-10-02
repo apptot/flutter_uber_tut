@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutterubertut/extensions/Styles.dart';
-import 'package:flutterubertut/extensions/Widget.dart';
-import 'package:flutterubertut/screen/WalkthroughScreen.dart';
+import 'package:flutterubertut/components/Widget.dart';
+import 'package:flutterubertut/screens/WalkthroughScreen.dart';
 import 'package:flutterubertut/extensions/Colors.dart';
+import 'package:flutterubertut/utils/Constants.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:styled_widget/styled_widget.dart';
 
@@ -41,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Column(
               children: [
                 Vertical_large,
-                Image.asset('images/juberCarBooking/juber_app_icon.png',
+                Image.asset(img_logo,
                     height: 100, width: 100, fit: BoxFit.cover),
                 Vertical_small,
                 Text("JUBER", style: HeaderStyle(),)
@@ -50,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Positioned(
               bottom: 0,
               child: Image.asset(
-                  'images/juberCarBooking/jcb_splash_background_image.png',
+                  img_splash_background,
                   width: context.width(),
                   fit: BoxFit.cover),
             ),
