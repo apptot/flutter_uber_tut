@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutterubertut/extensions/Styles.dart';
-import 'package:flutterubertut/components/Widget.dart';
-import 'package:flutterubertut/screens/WalkthroughScreen.dart';
-import 'package:flutterubertut/extensions/Colors.dart';
-import 'package:flutterubertut/utils/Constants.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:styled_widget/styled_widget.dart';
+
+import 'package:flutterubertut/components/Widget.dart';
+import 'package:flutterubertut/extensions/Colors.dart';
+import 'package:flutterubertut/extensions/Styles.dart';
+import 'package:flutterubertut/screens/WalkthroughScreen.dart';
+import 'package:flutterubertut/utils/Constants.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,8 +16,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  void initState() {
-    // TODO: implement initState
+  void initState() {   
     super.initState();
     init();
   }

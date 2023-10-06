@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutterubertut/extensions/Styles.dart';
-import 'package:flutterubertut/components/Widget.dart';
-import 'package:flutterubertut/extensions/Colors.dart';
-import 'package:flutterubertut/utils/Constants.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:styled_widget/styled_widget.dart';
+
+import 'package:flutterubertut/components/Widget.dart';
+import 'package:flutterubertut/extensions/Colors.dart';
+import 'package:flutterubertut/extensions/Styles.dart';
+import 'package:flutterubertut/utils/Constants.dart';
 
 class WalkthroughScreen extends StatefulWidget {
   const WalkthroughScreen({super.key});
