@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutterubertut/screens/WalkthroughScreen.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import 'package:flutterubertut/components/Widget.dart';
 import 'package:flutterubertut/extensions/Colors.dart';
 import 'package:flutterubertut/extensions/Styles.dart';
-import 'package:flutterubertut/screens/WalkthroughScreen.dart';
 import 'package:flutterubertut/utils/Constants.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -15,8 +15,9 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  
   @override
-  void initState() {   
+  void initState() {
     super.initState();
     init();
   }
@@ -44,15 +45,16 @@ class _SplashScreenState extends State<SplashScreen> {
                 Image.asset(img_logo,
                     height: 100, width: 100, fit: BoxFit.cover),
                 Vertical_small,
-                Text("JUBER", style: HeaderStyle(),)
+                Text(
+                  "JUBER",
+                  style: HeaderStyle(),
+                )
               ],
             ),
             Positioned(
               bottom: 0,
-              child: Image.asset(
-                  img_splash_background,
-                  width: context.width(),
-                  fit: BoxFit.cover),
+              child: Image.asset(img_splash_background,
+                  width: context.width(), fit: BoxFit.cover),
             ),
             Loading(),
           ],

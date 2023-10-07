@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutterubertut/screens/SplashScreen.dart';
 
+import 'package:flutterubertut/store/AppStore.dart';
+
+AppStore appStore = AppStore();
+
 void main() {
   runApp(const MyApp());
 }
