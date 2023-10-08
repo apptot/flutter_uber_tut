@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutterubertut/extensions/Colors.dart';
 import 'package:flutterubertut/utils/Constants.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -11,5 +12,14 @@ Widget Loading(){
   return  Center(
     child: Image.asset(img_loader,
         color: jcbDarkColor, width: 50, height: 50),
+  );
+}
+
+Widget jcbBackWidget(BuildContext context) {
+  return IconButton(
+    icon: Icon(Icons.arrow_back_ios, color:  jcbDarkColor),
+    onPressed: () {
+      finish(context);
+    },
   );
 }

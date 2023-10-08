@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterubertut/screens/WalkthroughScreen.dart';
+import 'package:flutterubertut/screens/WelcomeScreen.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import 'package:flutterubertut/components/Widget.dart';
@@ -15,7 +16,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  
   @override
   void initState() {
     super.initState();
@@ -26,7 +26,18 @@ class _SplashScreenState extends State<SplashScreen> {
     setStatusBarColor(Colors.transparent);
     await 3.seconds.delay;
     finish(context);
-    WalkthroughScreen().launch(context);
+
+    log(getBoolAsync(IS_FIRST_TIME, defaultValue: true));
+
+    if (getBoolAsync(IS_FIRST_TIME, defaultValue: true)) {
+      WalkthroughScreen().launch(context);
+    } else {
+      if (getBoolAsync(IS_LOGGED_IN)) {
+        //goto Home
+      } else {
+        WelcomeScreen().launch(context);
+      }
+    }
   }
 
   @override

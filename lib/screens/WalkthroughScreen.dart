@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterubertut/screens/HomeScreen.dart';
+import 'package:flutterubertut/screens/WelcomeScreen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:styled_widget/styled_widget.dart';
 
@@ -97,8 +97,9 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Skip").textColor(Colors.white).onTap(() {
-                  //goto Home  
-                  HomeScreen().launch(context);               
+                  //action
+                  setValue(IS_FIRST_TIME, false);
+                  WelcomeScreen().launch(context);
                 }),
                 DotIndicator(
                   pageController: pageController,
@@ -116,8 +117,9 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
                 )
                     .onTap(() {
                   if (currentPage == 3) {
-                    //go to Home      
-                    HomeScreen().launch(context);               
+                    //action
+                    setValue(IS_FIRST_TIME, false);
+                    WelcomeScreen().launch(context);
                   } else {
                     pageController.nextPage(
                         duration: Duration(milliseconds: 500),

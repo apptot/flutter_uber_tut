@@ -6,7 +6,7 @@ TextStyle HeaderStyle() {
       color: jcbDarkColor,
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
-      fontSize: 20.0,
+      fontSize: 26.0,
       height: 0.5);
 }
 
